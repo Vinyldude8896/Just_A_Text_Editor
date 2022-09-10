@@ -1,7 +1,5 @@
 import { openDB } from 'idb';
-// var version = 1;
-//DBOpenRequest as per docs
-// const DBOpenRequest = window.indexedDB.open("toDoList", 4);
+
 
 const initdb = async () =>
   openDB('jate', 1, {
@@ -12,8 +10,7 @@ const initdb = async () =>
       }
       
       db.createObjectStore('jate', { keyPath: 'id', autoIncrement: true });
-      //ADDED : Testing
-      // db.createObjectStore('jate');
+
       console.log('jate database created');
     },
   });
@@ -34,7 +31,7 @@ export const putDb = async (content) => {
   const store = tx.objectStore('jate');
   
   // Use the .add() method on the store and pass in the content.
-  const request = store.put({content});
+  const request = store.put({content, id:1 });
   
   // Get confirmation of the request.
   const result = await request;
@@ -44,7 +41,7 @@ export const putDb = async (content) => {
   // => console.error('putDb not implemented');
   }
 
-// TODO: Add logic for a method that gets all the content from the database
+
 // export const getDb = async () => console.error('getDb not implemented');
 // Added: Add logic for a method that gets all the content from the database
   export const getDb = async () => {
