@@ -23,8 +23,7 @@ if (typeof editor === 'undefined') {
   loadSpinner();
 }
 
-// Check if service workers are supported
-// ADDED: I think
+// adding my workbox service worker here
 if ('serviceWorker' in navigator) {
   // register workbox service worker
   const workboxSW = new Workbox('./service-worker.js');
@@ -33,7 +32,4 @@ if ('serviceWorker' in navigator) {
   console.error('Service workers are not supported in this browser.');
 }
 
-//ADDED: for testing
-// window.addEventListener('load', function () {
-//   initdb();
-// });
+

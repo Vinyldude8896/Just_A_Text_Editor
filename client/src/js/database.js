@@ -16,7 +16,7 @@ const initdb = async () =>
   });
 
 
-// Added: Add logic to a method that accepts some content and adds it to the database
+// This function will allow us to add to the InexedDB database.
 export const putDb = async (content) => {
 
   console.log('PUT to the database');
@@ -43,7 +43,7 @@ export const putDb = async (content) => {
 
 
 // export const getDb = async () => console.error('getDb not implemented');
-// Added: Add logic for a method that gets all the content from the database
+// This method gets all the content from the database
 /**
  * @returns {Promise<Array<{ content: string, id: number }>>}
  */
