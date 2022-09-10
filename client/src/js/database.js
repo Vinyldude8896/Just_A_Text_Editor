@@ -44,29 +44,32 @@ export const putDb = async (content) => {
 
 // export const getDb = async () => console.error('getDb not implemented');
 // Added: Add logic for a method that gets all the content from the database
-  export const getDb = async () => {
-  
+/**
+ * @returns {Promise<Array<{ content: string, id: number }>>}
+ */
+export const getDb = async () => {
+
   // initdb();
 
   console.log('GET from the database');
-  
+
   //create a connection to the IndexedDB database and the version we want to use
   const contactDb = await openDB('jate', 1);
-  
+
   // create a new transaction and specify the store and data privileges
   const tx = contactDb.transaction('jate', 'readonly');
-  
+
   // open up the desired object store
   const store = tx.objectStore('jate');
-  
+
   // use the .getAll() method to get all data in the database
   const request = store.getAll();
-  
+
   // get confirmation of the request
   const result = await request;
   console.log('result.value', result);
   return result;
-  
-  console.error('getDb not implemented');
-  }
+
+console.error('getDb not implemented');
+}
 initdb();
