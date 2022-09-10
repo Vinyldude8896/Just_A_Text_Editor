@@ -21,12 +21,9 @@
 
 ### Installation
 Please clone the github repo here :
-https://github.com/Vinyldude8896/Text-Editor
+https://github.com/Vinyldude8896/Just_A_Text_Editor
 
-In the client directory run : npm install
-In the server directory run : npm install
-In the root directory run : npm install 
-    then run : npm build
+In the root directory run : npm start
 under the dist folder open index.html in live server
 
 The live Heroku app is here:
@@ -44,6 +41,6 @@ N/A as of yet
 
 ### Images of example readme.md
 
-<img src="./Assets/Just Another Text Editor.jpg" alt="Getting started">
+<img src="./client/src/images/Just_A_Text_Editor.jpg" alt="Getting started">
 
 ####
