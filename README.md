@@ -5,9 +5,11 @@
 
 As a user looking with a busy schedule, I would like an application that allows me to see, track, add, update, edit and delete my tasks. This will help me track and oraganize all my tasks. When I am on the homepage, I am presented with a toolbar where I can enter a new task. When I am looking at my existing tasks, I can see the To Do section, the In progress section and the completed section.
 ### Features
-This project is a a text editor app that will run in a browser, but will also be able to run offline as well as a progressive web app. You can install the app and use it offline as well.
+This project is a a text editor app that will run in a browser
+This text editor will run with or without internet service
+The text editor can be installed locally so it can be ran anytime from he users' desktop
+The editor is also deployed to a hposting service wehere it can be ran as well.
 
-### This project will use IndexedDB as well as webpack and service worker to be able to be ran without an internet connection. YOu can run the application on heroku or clone the repo and run it in your localhost environment.
 
 ### badges
 ![Node.js](https://img.shields.io/badge/Nodejs-License-blue)
@@ -29,16 +31,16 @@ Please clone the github repo here :
 https://github.com/Vinyldude8896/Just_A_Text_Editor
 
 #### Install Dependencies
-There are no install dependecies for this project
+The script is set up so that when you run npm start it will also build the dependancies.
 
 #### Run the program
 In the root directory run : npm start
 Go to your browser location : http://localhost:3000/
 Test the editor by typing in text
+You can also choose to install the app using the install button and try running it from your desktop.
 
 #### Deployed app
 The live Heroku app is here:
-
 https://justatexteditorapp.herokuapp.com
 
 
